@@ -1,5 +1,6 @@
 import unittest
 from app.data_processor import process_data
+import HtmlTestRunner
 
 class TestDataProcessor(unittest.TestCase):
 
@@ -9,4 +10,4 @@ class TestDataProcessor(unittest.TestCase):
         self.assertEqual(result.loc['mean', 'age'], 25.25)
 
     if __name__=='__main__':
-        unittest.main()
+        unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='reports'))
