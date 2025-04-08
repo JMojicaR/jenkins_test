@@ -15,4 +15,5 @@ class TestDataProcessor(unittest.TestCase):
 
     if __name__=='__main__':
         reports_dir = os.path.join(os.getcwd(), 'reports')
-        unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output=reports_dir))
+        print(reports_dir)
+        unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output=reports_dir, report_name="test_report"))
