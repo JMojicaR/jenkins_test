@@ -2,6 +2,9 @@ import unittest
 from app.data_processor import process_data
 import HtmlTestRunner
 import os
+import sys
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 class TestDataProcessor(unittest.TestCase):
 
