@@ -1,10 +1,7 @@
 import unittest
-from app.data_processor import process_data
+from jenkins_test.app.data_processor import process_data
 import HtmlTestRunner
 import os
-import sys
-
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 class TestDataProcessor(unittest.TestCase):
 
@@ -15,5 +12,4 @@ class TestDataProcessor(unittest.TestCase):
 
     if __name__=='__main__':
         reports_dir = os.path.join(os.getcwd(), 'reports')
-        print(reports_dir)
         unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output=reports_dir, report_name="test_report"))
