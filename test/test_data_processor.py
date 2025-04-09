@@ -1,5 +1,5 @@
 import unittest
-from jenkins_test.app.data_processor import process_data
+from app.data_processor import process_data
 import HtmlTestRunner
 import os
 
