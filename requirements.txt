@@ -1,2 +1,3 @@
 pandas
-html-testRunner
+pytest
+pytest-html
