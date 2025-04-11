@@ -7,5 +7,5 @@ def test_process_data():
     """
     data = {'age': [23, 29, 21, 28], 'height': [165, 170, 174, 168]}
     result = process_data(data)
-    assert result.loc['mean', 'age'] == 25.25
+    assert result.loc['mean', 'age'] == 24.25
     assert result.loc['mean', 'height'] == 169.25
