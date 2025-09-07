@@ -2,7 +2,8 @@ import pytest
 from app.data_processor import process_data
 
 class TestDataProcessor:
-    def test_process_data():
+    
+    def test_process_data(self):
         """
         Test the process_data function to ensure it calculates the correct mean.
         """
@@ -10,8 +11,8 @@ class TestDataProcessor:
         result = process_data(data)
         assert result.loc['mean', 'age'] == 25.25
         assert result.loc['mean', 'height'] == 169.25
-    
-    def test_process_data2():
+
+    def test_process_data2(self):
         """
         Test the process_data function to ensure it calculates the correct mean.
         """
@@ -19,8 +20,8 @@ class TestDataProcessor:
         result = process_data(data)
         assert result.loc['mean', 'age'] == 24.25
         assert result.loc['mean', 'height'] == 169.25
-    
-    def test_process_data3():
+
+    def test_process_data3(self):
         """
         Test the process_data function to ensure it calculates the correct mean.
         """
